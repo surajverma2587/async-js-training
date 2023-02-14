@@ -10,10 +10,12 @@ const executor = (resolve, reject) => {
     resolve("timer value");
   };
 
-  setTimeout(onTimeoutComplete, 1000);
+  setTimeout(onTimeoutComplete, 2000);
 };
 
 const myPromise = new Promise(executor);
+
+console.log(myPromise);
 
 const firstThenFunc = function (value) {
   console.log(`First then receives ${value}`);
