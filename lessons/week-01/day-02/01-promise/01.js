@@ -15,8 +15,6 @@ const executor = (resolve, reject) => {
 
 const myPromise = new Promise(executor);
 
-console.log(myPromise);
-
 const firstThenFunc = function (value) {
   console.log(`First then receives ${value}`);
   return "first then value";
